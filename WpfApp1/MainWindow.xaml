@@ -1,0 +1,40 @@
+﻿<Window x:Class="WpfApp1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid Margin="0,0,3.333,-2.333">
+        <Button x:Name="open_db" Content="Обновить таблицу" HorizontalAlignment="Left" Margin="39,31,0,0" VerticalAlignment="Top" Width="108" Click="Button_Click"/>
+        <DataGrid x:Name="dateView" HorizontalAlignment="Left" Height="315" Margin="39,77,0,0" VerticalAlignment="Top" Width="459"/>
+        <Button x:Name="insert_clients" Content="Добавить клиента" HorizontalAlignment="Left" Margin="520,390,0,0" VerticalAlignment="Top" Width="118" Height="21" Click="insert_clients_Click"/>
+        <TextBox x:Name="surname_client" HorizontalAlignment="Left" Height="23" Margin="654,67,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="patrm_client" HorizontalAlignment="Left" Height="23" Margin="517,116,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="phone_client" HorizontalAlignment="Left" Height="23" Margin="654,116,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="email_client" HorizontalAlignment="Left" Height="23" Margin="517,160,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="date_client" HorizontalAlignment="Left" Height="23" Margin="654,160,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="service_cl" HorizontalAlignment="Left" Height="23" Margin="517,307,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="worker_client" HorizontalAlignment="Left" Height="23" Margin="517,209,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="257"/>
+        <TextBox x:Name="chartr" HorizontalAlignment="Left" Height="28" Margin="517,258,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="207"/>
+        <TextBox x:Name="result_service" HorizontalAlignment="Left" Height="23" Margin="517,356,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="160"/>
+        <TextBox x:Name="name_client" HorizontalAlignment="Left" Height="23" Margin="517,67,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="cost_service" HorizontalAlignment="Left" Height="23" Margin="662,307,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="99"/>
+        <TextBlock HorizontalAlignment="Left" Margin="517,46,0,0" TextWrapping="Wrap" Text="Имя" VerticalAlignment="Top" Width="28" RenderTransformOrigin="0.726,-0.773"/>
+        <TextBlock HorizontalAlignment="Left" Margin="662,46,0,0" TextWrapping="Wrap" Text="Фамилия" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="517,95,0,0" TextWrapping="Wrap" Text="Отчество" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="654,95,0,0" TextWrapping="Wrap" Text="Номер телефона" VerticalAlignment="Top" Width="120"/>
+        <TextBlock HorizontalAlignment="Left" Margin="517,144,0,0" TextWrapping="Wrap" Text="Email" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="654,144,0,0" TextWrapping="Wrap" Text="Дата обращения" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="517,188,0,0" TextWrapping="Wrap" Text="Представитель компании, оказавший услугу" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="520,286,0,0" TextWrapping="Wrap" Text="Услуга" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="520,237,0,0" TextWrapping="Wrap" Text="Характер обращения" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="662,289,0,0" TextWrapping="Wrap" Text="Цена" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="517,335,0,0" TextWrapping="Wrap" Text="Результат обращения" VerticalAlignment="Top"/>
+        <TextBox x:Name="id_client" HorizontalAlignment="Left" Height="21" Margin="342,31,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="72"/>
+        <TextBlock HorizontalAlignment="Left" Margin="342,10,0,0" TextWrapping="Wrap" Text="id" VerticalAlignment="Top"/>
+        <Button x:Name="remove_client" Content="Удалить клиента:" HorizontalAlignment="Left" Margin="183,31,0,0" VerticalAlignment="Top" Width="133" Click="remove_client_Click"/>
+    </Grid>
+
+</Window>
