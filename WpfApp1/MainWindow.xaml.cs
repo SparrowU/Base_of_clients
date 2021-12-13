@@ -66,7 +66,7 @@ namespace WpfApp1
                 }
                 else
                 {
-                    MessageBox.Show("Данные добавлены!");
+                    MessageBox.Show("Данные обновлены!");
                     break;
                 }
             }
